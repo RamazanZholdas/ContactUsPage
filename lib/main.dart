@@ -10,7 +10,7 @@ void main() {
 
 class HelpSection extends StatelessWidget {
   Widget createSection(String text1, String text2, Icon icon) {
-    return Container(
+    return AnimatedContainer(
       height: 100,
       width: 150,
       decoration: BoxDecoration(
@@ -23,6 +23,7 @@ class HelpSection extends StatelessWidget {
               offset: Offset(0,10),
             ),
       ]),
+      duration: null,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
