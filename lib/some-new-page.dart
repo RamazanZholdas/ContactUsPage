@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class SomeNewPage extends StatelessWidget {
+class SomeNewPage extends StatefulWidget {
+  @override
+  _SomeNewPageState createState() => _SomeNewPageState();
+}
+
+class _SomeNewPageState extends State<SomeNewPage> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,8 +14,8 @@ class SomeNewPage extends StatelessWidget {
           centerTitle: true,
           title: Text('Fuck me'),
         ),
-        body: Center(
-          child: Text('Ye u right'),
+        body: Stack(
+
         ),
       ),
     );
