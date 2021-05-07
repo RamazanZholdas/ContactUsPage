@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:just_doing_some_fool_shit/HelpSection/faq-page.dart';
-import 'package:just_doing_some_fool_shit/maps/searchDriverPage.dart';
-import 'package:just_doing_some_fool_shit/some-new-page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
@@ -206,7 +204,7 @@ class _HelpSectionState extends State<HelpSection> with SingleTickerProviderStat
                     color: Colors.orangeAccent,
                     size: 50,
                   ),
-                      ()=>Navigator.push(context, MaterialPageRoute(builder: (context)=>SearchDriver())),
+                      ()=>launchInBrowser('https://goo.gl/maps/5h3VXocCweEBT2Zm8'),
                 ),
               ),
             ],
